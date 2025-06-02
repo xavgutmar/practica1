@@ -10,7 +10,7 @@ public class ConexionBBDD {
     private static final String PASS = "10789228x!";
     private static Connection conexion = null;
 
-    private ConexionBBDD() {
+    public ConexionBBDD() {
         try {
             conexion = DriverManager.getConnection(URL, USER, PASS);
         } catch (SQLException e) {
