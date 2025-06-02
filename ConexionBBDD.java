@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexionBBDD {
-    private static final String URL = "jdbc:mysql://192.168.139:3306/";
+    private static final String URL = "jdbc:mysql://192.168.1.39:3306/escuela";
     private static final String USER = "xavi";
     private static final String PASS = "10789228x!";
     private static Connection conexion = null;

@@ -1,7 +1,6 @@
 package org.example;
 
 import java.sql.Connection;
-import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -9,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             final Connection CONNECTION = ConexionBBDD.getConnection();
+            System.out.println("Conexion establecida con exito" + (CONNECTION != null));
             final Statement STATEMENT = CONNECTION.createStatement();
 
             final String CREATE_TABLE_SQL = "CREATE TABLE IF NOT EXISTS Alumnos (" +
