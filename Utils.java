@@ -8,6 +8,7 @@ public class Utils {
         System.out.println(e.getMessage());
     }
 
+    // Conexión base de datos
     public static void getBBDD() {
         try {
             final var METADATA = ConexionBBDD.getConnection().getMetaData();
